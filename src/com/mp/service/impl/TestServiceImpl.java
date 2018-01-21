@@ -25,5 +25,4 @@ public class TestServiceImpl implements TestService{
 		return String.valueOf(obj);
 	}
 
-
 }

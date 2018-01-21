@@ -16,6 +16,7 @@ public class MemberInfoDAOImpl extends BaseDAOImpl<MemberInfo> implements Member
 	@Override
 	public MemberInfo findByNo(String memberNo) {
 		StringBuffer hql = new StringBuffer("");
+		// Hibernate sql = hql. from [table] where [column] = '?' 
 		hql.append(" from MemberInfo where memberNo = :memberNo ");
 		Query query = getQuery(hql.toString());
 		

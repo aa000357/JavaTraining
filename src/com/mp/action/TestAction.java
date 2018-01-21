@@ -20,7 +20,7 @@ public class TestAction {
 	
 	@RequestMapping(value="/delete")
 	public ModelAndView test() {
-//		testService.show("HELLO");
+//		int i = testService.show("HELLO");
 		return new ModelAndView("/test");
 	}
 	
@@ -33,7 +33,7 @@ public class TestAction {
 	public ModelAndView test(HttpServletRequest req) {
 		String param = req.getParameter("ABC");
 		System.out.println("param = " + param);
-		
+
 		String bcdPar = req.getParameter("boy");
 		System.out.println("bcd = " + bcdPar);
 		
